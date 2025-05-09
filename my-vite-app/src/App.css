@@ -1,0 +1,95 @@
+:root {
+  --primary-color: #007bff;
+  --primary-hover: #0056b3;
+  --text-color: #ffffff;
+  --bg-dark: #121212;
+  --card-bg: #1f1f1f;
+  --border-radius: 8px;
+  --padding: 1rem;
+  --font-main: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-dark);
+  font-family: var(--font-main);
+  color: var(--text-color);
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.App h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.card {
+  background-color: var(--card-bg);
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+button {
+  font-size: 1rem;
+  padding: 10px 16px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+button:focus {
+  outline: 2px solid var(--primary-color);
+}
+
+.nav-pane-ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  padding: 0;
+  margin: 0 0 2rem;
+  border-bottom: 2px solid #444;
+}
+
+.nav-pane-ul a {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.nav-pane-ul a:hover {
+  background-color: #1e1e1e;
+}
+.banner {
+  background-color: #1c1c1c;
+  padding: 1rem 0;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  border-bottom: 2px solid #444;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.banner h1 {
+  margin: 0;
+  font-family: 'UnifrakturCook', cursive;
+  color: white;
+}
+
